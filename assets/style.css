@@ -1,9 +1,9 @@
 :root {
-    --primary: #ccdad1;
+    --primary: #1f2024;
     --secondary: #9caea9;
-    --tertiary: #788585;
+    --tertiary: #4b8686;
     --light-dark: #837875;
-    --dark: #2d3b3f;
+    --dark: #7a5841;
     --border-radius: .3rem;
   }
   
@@ -13,7 +13,7 @@
   
   body {
     background-color: var(--primary);
-    margin: 0;
+    
     padding: 0;
     font-family: "IBM Plex Sans", sans-serif;
     color: var(--dark);
@@ -33,6 +33,15 @@
     line-height: 1.25;
   }
   
+
+
+
+  img{
+    margin-top: 3em;
+    margin-left: 20em;
+    margin-right: 20em;
+  }
+
   main {
     margin: 20px auto;
     width: 94%;
