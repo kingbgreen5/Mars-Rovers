@@ -11,47 +11,21 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="./assets/style.css" />
   
-  
-  <title>Mars Space Explorator</title>
+  <title>Rover</title>
 </head>
 
-
-
 <body>
-
+<img id="hero" src="https://www.nameastar.com/wp-content/uploads/2020/10/Mars_Red_Planet.jpg" alt="">
   <div class="has-text-centered " id="topImage">
-    <h1 class="title is-5 has-text-white "> Mars Space Explorator</h1>
-    <hr class="content-divider">
 
- 
- 
+    
   </div>
   <!-- This is the Line that Becomes the Youtube Player -->
   <div id="player"></div>  
- 
-
-
-   
-   
 
         <!-- This is the Line that Becomes the Youtube Player -->
         <div id="player"></div>    
-        
       
-      
-       
-  
-
-
-
-
-
-        
-         
-          
-            <!-- Trigger/Open The Modal -->
-
-
 <!-- The Modal -->
 <div id="error-modal" class="modal">
 
@@ -64,39 +38,31 @@
 </div>
           </div>
         </div>
-        
-    
-        <div class="column" >
-          <h3 class="box text is-size-7 ">Curiosity Rover: Enter Date (2012-08-06  - Present)</h3>
+
+        <div class="column-5" id="searchbar">
+       
             <br>
-            <form id="searchField" >
-              <label class="form-label" for="username"></label>
-              <input name="username" id="searchFieldInput" placeholder="yyyy-mm-dd" type="message" autofocus="true" class="form-input" />
-              <button type="submit" class="button is-white is-small">Search</button>
+            <form id="searchField">
+              <label class="form-label is-dark" for="username"></label>
+              <input name="Input" id="searchFieldInput" placeholder="2012-08-06-Present" type="message" autofocus="true" class="form-input" />
+              <button type="submit" class="button is-dark is-small" id="searchButton">&#128269</button>
               
             
             </form>
             
             <div class="text is-5  pl-5 pt-5 pb-5"> 
-            <button class="subtitle is-7 button is-white is-inverted " id =saveSearch>Save Search</button>
-            <button class="subtitle is-7 button is-white is-inverted" id =clearSaved>Clear Search History</button>
+            <!-- <button class="subtitle is-7 button is-white is-inverted " id =saveSearch>Save Date</button>
+            <button class="subtitle is-7 button is-white is-inverted" id =clearSaved>Clear Saved Dates</button> -->
           </div>
-            <p class="text is-5  pl-5 pt-5 pb-5">Search History</p>
+            <!-- <p class="text is-5  pl-5 pt-5 pb-5">Search History</p> -->
        
                 <!-- where the saved date buttons are going to be displayed -->
                 
                 <div id="displaySaved" class="level-left text is-size-7"></div> 
-                
-          
-            
-            
-            
+
           </div>
         </div>
-                
-    
-  
-        
+
      <div class="my-6 hero is-fullheight">
     <div id="display" class="block"></div>
   </div>
@@ -108,21 +74,18 @@
     <div class="column is-7 navbar-start">
    
      
-      <button class="subtitle is-7 button is-white " id="muteBtn"> &#128360</button>
-      <button class="subtitle is-7 button is-white " id="playPause"> &#9205</button>
-      <button class="subtitle is-7 button is-white " id="restartButton"> &#8634</button>
-      <button class="subtitle is-7 button is-white  " id="volumeUp">  &#128362</button>
-      <button class="subtitle is-7 button is-white  " id="volumeDown">  &#128361</button>
+      <button class="subtitle is-7 button is-dark" id="muteBtn"> &#128360</button>
+      <button class="subtitle is-7 button is-dark" id="playPause"> &#9205</button>
+      <button class="subtitle is-7 button is-dark" id="restartButton"> &#8634</button>
+      <button class="subtitle is-7 button is-dark" id="volumeUp">  &#128362</button>
+      <button class="subtitle is-7 button is-dark" id="volumeDown">  &#128361</button>
     </div>
 
 </div> 
   </div>
 </nav>
 
-<footer class="footer">
-  <h3>Space the ultimate frontier</h3>
-</footer>
-          
+
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <script src="./assets/script.js"></script>

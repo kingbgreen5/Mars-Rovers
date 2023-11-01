@@ -8,9 +8,9 @@ var restartMusicButton= document.querySelector('#restartButton')
 var volumeUpBtn= document.querySelector('#volumeUp')
 var volumeDwnBtn= document.querySelector('#volumeDown')
 //----------------Local Storage-----------------------
-var saveSearchBtn= document.querySelector('#saveSearch')
-var displaySaved = document.querySelector('#displaySaved')
-var clearSaved = document.querySelector('#clearSaved')
+// var saveSearchBtn= document.querySelector('#saveSearch')
+// var displaySaved = document.querySelector('#displaySaved')
+// var clearSaved = document.querySelector('#clearSaved')
 
 var errorMessage =document.querySelector('#error-modal')
 
@@ -30,15 +30,15 @@ var apiUrl = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?ea
 console.log(usersSearchInput)
 
 function displayPhotos(imgURL){
-  if(cameraName == "Mast Camera" ){   //  prevents Mast camera photos from loading, because they dont look very good
-    return;
-  }else{
+  // if(cameraName == "Mast Camera" ){   //  prevents Mast camera photos from loading, because they dont look very good
+  //   return;
+  // }else{
   var img = document.createElement("img");
   img.src = imgURL;
   img.title = cameraName;
   // document.body.appendChild(img);        //  adds it to the <body> tag
   displayEl.appendChild(img);                    
-}
+// }
 }
 
 fetch(apiUrl)                                         // FETCH Request
@@ -218,9 +218,9 @@ function volumeDown(){
 
 
 //---Event Listeners
-clearSaved.addEventListener('click', clearSearchHandler )       // Saving to local storage
-saveSearchBtn.addEventListener('click', saveSearch)
-displaySaved.addEventListener('click',historyButtonHandler)
+// clearSaved.addEventListener('click', clearSearchHandler )       // Saving to local storage
+// saveSearchBtn.addEventListener('click', saveSearch)
+// displaySaved.addEventListener('click',historyButtonHandler)
 
 
 
